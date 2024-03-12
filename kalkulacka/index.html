@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka s přihlášením</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="login-container">
+        <h2>Přihlášení</h2>
+        <form id="login-form">
+            <label for="username">Uživatelské jméno:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="login()">Přihlásit se</button>
+        </form>
+    </div>
+
+    <div id="calculator-container" style="display:none;">
+        <h2>Kalkulačka</h2>
+        <input id="display" type="text" readonly>
+        <div id="buttons">
+            <button onclick="pridat('1')">1</button>
+            <button onclick="pridat('2')">2</button>
+            <button onclick="pridat('3')">3</button>
+            <button onclick="pridat('+')">+</button>
+            <br>
+            <button onclick="pridat('4')">4</button>
+            <button onclick="pridat('5')">5</button>
+            <button onclick="pridat('6')">6</button>
+            <button onclick="pridat('-')">-</button>
+            <br>
+            <button onclick="pridat('7')">7</button>
+            <button onclick="pridat('8')">8</button>
+            <button onclick="pridat('9')">9</button>
+            <button onclick="pridat('*')">*</button>
+            <br>
+            <button onclick="pridat('0')">0</button>
+            <button onclick="vymazat()">C</button>
+            <button onclick="vypocitat()">=</button>
+            <button onclick="pridat('/')">/</button>
+            <br>
+            <button onclick="pridatPercenta()">%</button>
+            <button onclick="pridatDesetinnouCislu()">.</button>
+         
+        </div>
+    </div>
+
+
+</body>
+
+</html>
